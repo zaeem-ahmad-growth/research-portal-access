@@ -68,6 +68,7 @@
   .tbl td{padding:12px 14px; border-bottom:1px solid var(--line); color:var(--ink-2); vertical-align:top}
   .tbl tr:last-child td{border-bottom:0}
   .tbl td.k{color:var(--ink); font-weight:600; white-space:nowrap}
+  .tbl td.k small{font-weight:400; color:var(--ink-3)}
   .n{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px;
      border-radius:50%; background:var(--secure); color:#fff; font-family:"IBM Plex Mono",monospace;
      font-size:12px; font-weight:600}
@@ -80,6 +81,7 @@
   .fact b{display:block; font-family:"Archivo",sans-serif; font-size:17px; color:var(--secure)}
   .fact span{font-size:12px; color:var(--ink-3)}
 
+  .note{font-size:12.5px; color:var(--ink-3); margin-top:11px; line-height:1.45}
   .foot{margin-top:26px; font-size:13px; color:var(--ink-3); border-top:1px solid var(--line); padding-top:14px}
 
   @media (max-width:620px){ .facts{grid-template-columns:1fr} }
@@ -123,6 +125,17 @@
     <tr><td class="k">Updates</td><td><span class="yes">Automatic</span> &mdash; publish themselves, no ongoing cost</td></tr>
     </tbody>
   </table></div>
+
+  <h2 class="sec">Claude credit usage &mdash; lowest it has ever been</h2>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Setup</th><th>Credits per update</th></tr></thead>
+    <tbody>
+    <tr><td class="k">Claude artifacts <small>(first)</small></td><td>Highest &mdash; every single edit had to go through Claude</td></tr>
+    <tr><td class="k">GitHub only <small>(second)</small></td><td>Lower &mdash; pages can be edited without Claude</td></tr>
+    <tr><td class="k">GitHub + Cloudflare <small>(now)</small></td><td><span class="yes">Lowest</span> &mdash; publishing costs no Claude credits at all</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Pages now build and publish on GitHub and Cloudflare servers. Claude credits are spent only on research and writing &mdash; never on publishing, and never on switching a site between public and private.</p>
 
   <p class="foot">I will send the portal links once your address is approved. Until then they will not open &mdash; that is expected, not an error.</p>
 
